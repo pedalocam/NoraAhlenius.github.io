@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Noras Hemsida</title>
+<title>Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./Style/style.css">
+<link rel="stylesheet" type="text/css" href="./Style/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -38,21 +38,21 @@
   /* First image (Logo. Full height) */
 
   .bgimg-1 {
-    background-image: url('./image/Nora.jpg');
-    min-height: 100%;
+    background-image: url('./img/Nora.jpg');
+    min-height: 400px;
   }
 
   /* Second image (Portfolio) */
 
   .bgimg-2 {
-    background-image: url("./image/nature2.jpeg");
+    background-image: url("./img/parallax2.jpg");
     min-height: 400px;
   }
 
   /* Third image (Contact) */
 
   .bgimg-3 {
-    background-image: url("./image/nature3.jpeg");
+    background-image: url("./img/parallax3.jpg");
     min-height: 400px;
   }
 
@@ -75,23 +75,27 @@
   }
 </style>
 
+<header class="container center padding-48 white"></header>
+<!--
+<header class="display-container wide" id="home">
+    <img class="image" src="./img/holdingCamera.jpg" alt="Fashion Blog" width="100%" height="100px">
+   
+</header>
+-->
+
 <body>
 
   <!-- Navbar (sit on top) -->
   <div class="top">
     <div class="bar" id="myNavbar">
-      <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
+      <a class="bar-item button hover-black hide-medium hide-large left" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="#home" class="bar-item button">HOME</a>
-      <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
       <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
       <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="bar-block white hide hide-large hide-medium">
-      <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
       <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
       <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
       <a href="#" class="bar-item button">SEARCH</a>
@@ -101,102 +105,48 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 display-container opacity-min" id="home">
     <div class="display-middle" style="white-space:nowrap;">
-      <span class="center padding-large black xlarge wide animate-opacity">MY <span class="hide-small">WEBSITE</span> LOGO</span>
-    </div>
-  </div>
-
-  <!-- Container (About Section) -->
-  <div class="content container padding-64" id="about">
-    <h3 class="center">ABOUT ME</h3>
-    <p class="center"><em>I am a designer</em></p>
-    <p>Lorem ipsum dolor sit amet, tellus laoreet nisl neque commodo felis. Vitae dis porta netus, interdum mi non justo blandit habitasse, vestibulum suscipit eu consequat id, placerat auctor. Convallis venenatis vivamus quis ac, nunc rhoncus cubilia, nunc metus tellus elit in lacus mauris, accumsan at sem et ut molestie, sociis elit. Sit eget magnis. Purus metus rhoncus, litora erat, lectus enim a id integer. Turpis euismod sed augue. Morbi sed dolor in at, posuere imperdiet vitae at et eu, mauris mauris, aliquam vivamus pellentesque molestie posuere feugiat fusce. Vestibulum hendrerit praesent metus consectetuer. Natus ut, vivamus id integer urna mi.</p>
-    <div class="row">
-      <div class="col m6 center padding-large">
-        <p><b><i class="fa fa-user margin-right"></i>My Name</b></p><br>
-        <img src="./image/Nora.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
-      </div>
-
-      <!-- Hide this text on small devices -->
-      <div class="col m6 hide-small padding-large">
-        <p>Volutpat metus ac litora massa, vehicula malesuada donec libero donec blandit non, quia at odio suscipit, ligula sed dolor curabitur elit eros, fringilla pellentesque sem pede. Pede rhoncus orci quis ullamcorper, lectus eu odio massa natoque, magni dui vivamus nunc vitae fringilla ante. Lectus ipsum sapien facilisi. Mus pulvinar hac eu torquent, porttitor ac quam in, hendrerit lectus fringilla maecenas odio et interdum, suspendisse amet mauris vivamus lorem nunc morbi, pulvinar condimentum laoreet diam nisl molestie tellus. Donec amet molestie non fermentum. Tempor et mi sem at cras. A congue, justo amet nunc, mauris maecenas lorem cras imperdiet interdum vitae, eget egestas fames ante ligula dolor, orci auctor nulla elit urna dapibus justo. Odio sed elit lobortis, donec amet sed iste sollicitudin sed,</p>
-      </div>
-    </div>
-    <p class="large center padding-16">Im really good at:</p>
-    <p class="wide"><i class="fa fa-laptop"></i>Design</p>
-    <div class="light-grey">
-      <div class="container padding-small dark-grey center" style="width:90%">90%</div>
-    </div>
-    <p class="wide"><i class="fa fa-photo"></i>Photoshop</p>
-    <div class="light-grey">
-      <div class="container padding-small dark-grey center" style="width:75%">75%</div>
-    </div>
-    <p class="wide"><i class="fa fa-bar-chart"></i>Projekt leader</p>
-    <div class="light-grey">
-      <div class="container padding-small dark-grey center" style="width:80%">80%</div>
-    </div>
-  </div>
-
-  <div class="row center dark-grey padding-16">
-    <div class="quarter section">
-      <span class="xlarge">14+</span><br> Partners
-    </div>
-    <div class="quarter section">
-      <span class="xlarge">55+</span><br> Projects Done
-    </div>
-    <div class="quarter section">
-      <span class="xlarge">89+</span><br> Happy Clients
-    </div>
-    <div class="quarter section">
-      <span class="xlarge">150+</span><br> Meetings
-    </div>
-  </div>
-
-  <!-- Second Parallax Image with Portfolio Text -->
-  <div class="bgimg-2 display-container opacity-min">
-    <div class="display-middle">
-      <span class="xxlarge text-white wide">PORTFOLIO</span>
+      <span class="xxlarge text-white wide">NORA</span>
     </div>
   </div>
 
   <!-- Container (Portfolio Section) -->
   <div class="content container padding-64" id="portfolio">
-    <h3 class="center">MY WORK</h3>
-    <p class="center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="row-padding center">
       <div class="col m3">
-        <img src="./image/p1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
       </div>
 
       <div class="col m3">
-        <img src="./image/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
       </div>
 
       <div class="col m3">
-        <img src="./image/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
       </div>
 
       <div class="col m3">
-        <img src="./image/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
       </div>
     </div>
 
     <div class="row-padding center section">
       <div class="col m3">
-        <img src="./image/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
       </div>
 
       <div class="col m3">
-        <img src="./image/p6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
       </div>
 
       <div class="col m3">
-        <img src="./image/p7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
       </div>
 
       <div class="col m3">
-        <img src="./image/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Short explenation of design and whatnot">
+        <img src="./img/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
       </div>
       <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
     </div>
@@ -220,6 +170,8 @@
 
   <!-- Container (Contact Section) -->
   <div class="content container padding-64" id="contact">
+    <h3 class="center">WHERE I WORK</h3>
+
     <div class="row padding-32 section">
       <div class="col m4 container">
         <!-- Add Google Maps -->
@@ -227,8 +179,8 @@
       </div>
       <div class="col m8 panel">
         <div class="large margin-bottom">
-          <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Stockholm, Sweden<br>
-          <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: 070-555 72 39<br>
+          <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Chicago, US<br>
+          <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: +00 151515<br>
           <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: mail@mail.com<br>
         </div>
         <form action="/action_page.php" target="_blank">
@@ -315,9 +267,6 @@
     }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-  <!--
-To use this code on your website, get a free API key from Google.
--->
-
 </body>
+
 </html>

@@ -283,8 +283,8 @@ hr {
 }
 
 .image {
-  max-width: 100%;
-  height: auto
+  max-width: 90%;
+  height: 50%
 }
 
 img {
@@ -479,11 +479,13 @@ a {
   color: #000
 }
 
+/*
 .dropdown-hover:hover > .button:first-child,
 .dropdown-click:hover > .button:first-child {
-  background-color: #ccc;
-  color: #000
+    background-color: #ccc;
+    color: #000
 }
+*/
 
 .dropdown-content {
   cursor: auto;
@@ -570,7 +572,7 @@ a {
 }
 
 .bar .bar-item {
-  padding: 8px 16px;
+  padding: 34px 16px;
   float: left;
   width: auto;
   border: none;
@@ -1406,10 +1408,12 @@ a {
   float: right!important
 }
 
+/*
 .button:hover {
-  color: #000!important;
-  background-color: #ccc!important
+    color: #000!important;
+    background-color: #ccc!important
 }
+*/
 
 .transparent,
 .hover-none:hover {
