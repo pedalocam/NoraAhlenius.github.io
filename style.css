@@ -32,6 +32,10 @@ a:hover {
   border: none;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .gallery-title {
   font-size: 36px;
   color: #42B32F;
