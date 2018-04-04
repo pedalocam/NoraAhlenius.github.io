@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./libraries/css/bootstrap.css">
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <script src="sketch.js"></script>
+
+  <style>
+    .container {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 25px;
+      height: 2.5px;
+      background-color: #333;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 2px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-6px, -1px);
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-white">
+    <a class="navbar-brand" href="index.html">Peter Camerini</a>
+    <button class="navbar-toggler btn" type="button" onclick="myFunction(this)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto px-2">
+        <li class="nav-item align-middle px-2">
+          <a class="nav-link " href="#">Me</a>
+        </li>
+        <li class="nav-item align-middle px-2">
+          <a class="nav-link" href="#">Work</a>
+        </li>
+        <li class="nav-item align-middle px-2">
+          <a class="nav-link" href="#">Travel</a>
+        </li>
+        <li class="nav-item align-middle px-2">
+          <a class="nav-link align-middle" href="#">Stuff</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div align="center">
+          <a class="btn btn-default filter-button" data-filter="all">All</a>
+          <a class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</a>
+          <a class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</a>
+          <a class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</a>
+          <a class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</a>
+        </div>
+      </div>
+
+
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter hdpe">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter sprinkle">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter hdpe">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>a
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter spray">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter spray">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter hdpe">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter spray">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter sprinkle">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <!--
+        <div class="row justify-content-center">
+            <div class="gallery_product col filter hdpe">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+           <div class="gallery_product col filter hdpe">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col filter hdpe">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col filter hdpe">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+           <div class="gallery_product col filter hdpe">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter sprinkle">
+
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter sprinkle">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter irrigation">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter irrigation">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter irrigation">
+
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter irrigation">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+        </div>
+                <div class="row justify-content-center">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter spray">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter spray">
+
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+         
+-->
+  <!--
+    <div class="container-fluid ">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-md-offset-3">
+                <img src="./img/p1.jpg" class="img-responsive" style="width: 100%; margin-top: 10px;">
+                <div class="caption text-center">
+                    <p>Something</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/p2.jpg" class="img-responsive" style="width: 100%; margin-top: 10px;">
+                <div class="caption text-center">
+                    <p>Something</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/p3.jpg" class="img-responsive" style="width: 100%; margin-top: 10px;">
+                <div class="caption text-center">
+                    <p>Something</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-md-offset-3">
+                <img src="./img/p4.jpg" class="img-responsive" style="width: 100%; margin-top: 10px;">
+                <div class="caption text-center">
+                    <p>Something</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/p5.jpg" class="img-responsive" style="width: 100%; margin-top: 10px;">
+                <div class="caption text-center">
+                    <p>Something</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/p6.jpg" class="img-responsive" style="width: 100%; margin-top: 10px;">
+                <div class="caption text-center">
+                    <p>Something</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-md-offset-3">
+                <hr style="margin-top: 70px; color: black;">
+            </div>
+        </div>
+-->
+  <script>
+    $(document).ready(function() {
+      console.log("ready!");
+
+      $(".filter-button").click(function() {
+        var value = $(this).attr('data-filter');
+
+        if (value == "all") {
+          //$('.filter').removeClass('hidden');
+          $('.filter').show('1000');
+        } else {
+          //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+          //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+          $(".filter").not('.' + value).hide('3000');
+          $('.filter').filter('.' + value).show('3000');
+
+        }
+      });
+
+      if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
+
+    });
+
+  </script>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
