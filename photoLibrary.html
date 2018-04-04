@@ -5,19 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!--  <link rel="stylesheet" type="text/css" href="./libraries/css/bootstrap.css">-->
-
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-  <script src="sketch.js"></script>
 
   <style>
     .container {
@@ -48,7 +40,6 @@
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-6px, -1px);
     }
-
   </style>
 </head>
 
@@ -62,134 +53,187 @@
                 <div class="bar3"></div>
             </div>
         </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto px-2">
-        <li class="nav-item align-middle px-2">
-          <a class="nav-link " href="#">Me</a>
-        </li>
-        <li class="nav-item align-middle px-2">
-          <a class="nav-link" href="#">Work</a>
-        </li>
-        <li class="nav-item align-middle px-2">
-          <a class="nav-link" href="#">Travel</a>
-        </li>
-        <li class="nav-item align-middle px-2">
-          <a class="nav-link align-middle" href="#">Stuff</a>
-        </li>
-      </ul>
-    </div>
+<!--
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto px-2">
+    <li class="nav-item align-middle px-2">
+      <a class="nav-link " href="#">Me</a>
+    </li>
+    <li class="nav-item align-middle px-2">
+      <a class="nav-link" href="#">Work</a>
+    </li>
+    <li class="nav-item align-middle px-2">
+      <a class="nav-link" href="#">Travel</a>
+    </li>
+    <li class="nav-item align-middle px-2">
+      <a class="nav-link align-middle" href="#">Stuff</a>
+    </li>
+  </ul>
+</div>
+-->
   </nav>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div align="center">
           <a class="btn btn-default filter-button" data-filter="all">All</a>
-          <a class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</a>
-          <a class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</a>
-          <a class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</a>
-          <a class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</a>
+          <a class="btn btn-default filter-button" data-filter="Work">Work</a>
+          <a class="btn btn-default filter-button" data-filter="Vacation">Vacation</a>
+          <a class="btn btn-default filter-button" data-filter="CoolStuff">Cool Stuff</a>
+          <a class="btn btn-default filter-button" data-filter="Friends">Friends</a>
         </div>
       </div>
 
-
-
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter hdpe">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Work">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter sprinkle">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Vacation">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter hdpe">
-        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-      </div>a
-
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Work">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter spray">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Friends">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter CoolStuff">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter spray">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Friends">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter CoolStuff">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter irrigation">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Friends">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter hdpe">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Friends">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter spray">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Work">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
 
-      <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter sprinkle">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter CoolStuff">
         <img src="http://fakeimg.pl/365x365/" class="img-responsive">
       </div>
+
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Vacation">
+        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+      </div>
+
+      <!--
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Work">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Vacation">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Work">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Friends">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter CoolStuff">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Friends">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter CoolStuff">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Friends">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Friends">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Work">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter CoolStuff">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+
+<div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-5 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 filter Vacation">
+  <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+</div>
+-->
     </div>
   </div>
   <!--
         <div class="row justify-content-center">
-            <div class="gallery_product col filter hdpe">
+            <div class="gallery_product col filter Work">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
-           <div class="gallery_product col filter hdpe">
+           <div class="gallery_product col filter Work">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
-            <div class="gallery_product col filter hdpe">
+            <div class="gallery_product col filter Work">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
-            <div class="gallery_product col filter hdpe">
+            <div class="gallery_product col filter Work">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
-           <div class="gallery_product col filter hdpe">
-                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter sprinkle">
-
-                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
-            </div>
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter sprinkle">
+           <div class="gallery_product col filter Work">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter irrigation">
-                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
-            </div>
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter irrigation">
-                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
-            </div>
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter irrigation">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter Vacation">
 
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter irrigation">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter Vacation">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter Friends">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter Friends">
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter Friends">
+
+                <img src="http://fakeimg.pl/420x297/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter Friends">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
         </div>
                 <div class="row justify-content-center">
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter spray">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 filter CoolStuff">
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter spray">
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-offset-3  filter CoolStuff">
 
                 <img src="http://fakeimg.pl/420x297/" class="img-responsive">
             </div>
@@ -269,13 +313,11 @@
       $(this).addClass("active");
 
     });
-
   </script>
   <script>
     function myFunction(x) {
       x.classList.toggle("change");
     }
-
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
