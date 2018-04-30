@@ -62,6 +62,7 @@ button:focus {
   text-align: center;
   color: black;
   margin-bottom: 30px;
+  display: inline-block;
 
 }
 
